@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-let peach = "#FFCAAF"
-let oceanBlue = "#C6E2E9"
+let peach = "#FFA69E"
+let oceanBlue = "#B8F2E6"
 class Tiles extends Component {
 
   constructor(props) {

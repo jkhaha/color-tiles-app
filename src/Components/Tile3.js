@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-let orange = "#EE6055"
-let paleGreen = "#AAF683"
+let orange = "#5E6472"
+let paleGreen = "#B8F2E6"
 class Tile3 extends Component {
 
   constructor(props) {

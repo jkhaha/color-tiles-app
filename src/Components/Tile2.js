@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-let burlywood = "#DAB894"
-let pastelBlue = "#A7BED3"
+let burlywood = "#FAF3DD"
+let pastelBlue = "#B8F2E6"
 class Tiles2 extends Component {
 
   constructor(props) {
