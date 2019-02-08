@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-let orange = "#5E6472"
-let paleGreen = "#B8F2E6"
+let orange = "#B80C09"
+let red = "#5FB49C"
 class Tile3 extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      backgroundColor: paleGreen
+      backgroundColor: red
     }
     this.changeColor = this.changeColor.bind(this)
   }
 
   changeColor(){
-    const newColor = this.state.color == paleGreen ? orange : paleGreen;
+    const newColor = this.state.color == red ? orange : red;
     this.setState({ color: newColor })
   }
 

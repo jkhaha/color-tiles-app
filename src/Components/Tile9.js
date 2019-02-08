@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-let burlywood = "#465C69"
-let pastelBlue = "#363457"
-class Tiles2 extends Component {
+let yellow = "#FF6B35"
+let sapphire = "#004E89"
+class Tile9 extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      backgroundColor: pastelBlue
+      backgroundColor: sapphire
     }
     this.changeColor = this.changeColor.bind(this)
   }
 
   changeColor(){
-    const newColor = this.state.color == pastelBlue ? burlywood : pastelBlue;
+    const newColor = this.state.color == sapphire ? yellow : sapphire;
     this.setState({ color: newColor })
   }
 
@@ -27,6 +27,6 @@ class Tiles2 extends Component {
   }
 }
 
-export default Tiles2;
+export default Tile9;
 
-ReactDOM.render(<Tiles2 />, document.getElementById('root'));
+ReactDOM.render(<Tile9 />, document.getElementById('root'));
