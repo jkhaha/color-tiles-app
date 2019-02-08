@@ -6,14 +6,14 @@ class Tiles extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      backgroundColor: "blue"
+      backgroundColor: "#FFCAAF"
     }
   }
 
 
   boxClick = (event) => {
     this.setState({
-      backgroundColor: "red"
+      backgroundColor: "#C6E2E9"
     })
   }
 
