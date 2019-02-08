@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+let peach = "#FFCAAF"
+let oceanBlue = "#C6E2E9"
 class Tiles extends Component {
+
+
 
   constructor(props) {
     super(props);
     this.state = {
-      backgroundColor: "#FFCAAF"
+      backgroundColor: oceanBlue
     }
+    this.changeColor = this.changeColor.bind(this)
   }
 
-
-  boxClick = (event) => {
-    this.setState({
-      backgroundColor: "#C6E2E9"
-    })
+  changeColor(){
+    const newColor = this.state.color == oceanBlue ? peach : oceanBlue;
+    this.setState({ color: newColor })
   }
 
   render() {
     return (
       <div className="TileContainer">
-          <div className="Tiles" style={{backgroundColor: this.state.backgroundColor}} onClick={this.boxClick}></div>
+          <div className="Tiles" style={{backgroundColor: this.state.color}} onClick={this.changeColor}></div>
       </div>
     );
   }
