@@ -8,11 +8,14 @@ import Tile6 from './Tile6'
 import Tile7 from './Tile7'
 import Tile8 from './Tile8'
 import Tile9 from './Tile9'
+import Header from './Header'
 
 class TileContainer extends Component {
   render(){
     return(
-      <div className="grid-container">
+      <div>
+        <Header/>
+        <div className="grid-container">
       <Tiles/>
       <Tile2/>
       <Tile3/>
@@ -24,6 +27,7 @@ class TileContainer extends Component {
           <Tile7/>
           <Tile8/>
           <Tile9/>
+        </div>
       </div>
     )
   }
